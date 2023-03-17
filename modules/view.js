@@ -40,7 +40,7 @@ export class View {
       const repoElement = this.createElement('li', 'repo-prev');
       repoElement.innerHTML = `<img class="repo-owner-avatar" src="${RepoData.owner.avatar_url}" alt="owner ${RepoData.owner.login}">
       <span class="repo-owner">${RepoData.owner.login}</span>
-      <a class="repo-link" target="_blank" href="${RepoData.html_url}">${RepoData.full_name}</a>
+      <a class="repo-link" target="_blank" href="${RepoData.html_url}">${RepoData.name}</a>
       <span class="repo-updated">upd. ${RepoData.updated_at}</span>`;
 
       this.reposList.append(repoElement);
